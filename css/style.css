@@ -58,6 +58,7 @@ body {
     --page-title-portfolio:#212121;
     --mailto-footer:rgba(255, 255, 255, 0.6);
     --tel-footer:rgba(255, 255, 255, 0.6);
+    --icon-color: #AFB1B8;
     }
 
 .visually-hidden {
@@ -194,6 +195,42 @@ body {
     line-height: 1.36;
     color: var(--title-color);
   }
+  
+  .social-icons .icon {
+      width: 20px;
+      height: 20px;
+  }
+
+  .social-icons {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px;
+  }
+
+  .social-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .social-icons-item + .social-icons-item {
+      margin-left: 10px;
+  }
+
+  .icon {
+      fill: var(--icon-color);
+  }
+
+  .social-icons-link:hover .icon,
+  .social-icons-link:focus .icon {
+      fill: var(--accent-color)
+  }
+
+
 
   .logo,
   .logo-footer {
@@ -321,7 +358,7 @@ body {
 
     .title-list-blok {
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 16px;
         text-align: center;
     }
 
