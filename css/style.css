@@ -59,6 +59,7 @@ body {
     --mailto-footer:rgba(255, 255, 255, 0.6);
     --tel-footer:rgba(255, 255, 255, 0.6);
     --icon-color: #AFB1B8;
+    --icon-footer-color:#FFFFFF;
     }
 
 .visually-hidden {
@@ -201,11 +202,22 @@ body {
       height: 20px;
   }
 
+  .social-icons-footer .icon-footer {
+    width: 20px;
+    height: 20px;
+}
+
   .social-icons {
       display: flex;
       justify-content: center;
       padding-bottom: 30px;
   }
+
+  .social-icons-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
 
   .social-icons-link {
     display: flex;
@@ -217,17 +229,86 @@ body {
     border-radius: 50%;
   }
 
+  .social-icons-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+  }
+
+  
+
   .social-icons-item + .social-icons-item {
       margin-left: 10px;
   }
 
-  .icon {
-      fill: var(--icon-color);
+  .icon,
+  .client-icon {
+      fill: var(--icon-color);    
+  }
+
+  .icon-footer {
+    fill: var(--icon-footer-color)
   }
 
   .social-icons-link:hover .icon,
   .social-icons-link:focus .icon {
       fill: var(--accent-color)
+  }
+
+  .social-icons-link-footer:hover .icon-footer,
+  .social-icons-link-footer:focus .icon-footer {
+      fill: var(--accent-color)
+  }
+
+  .social-icons-link:hover .icon-letter,
+  .social-icons-link:focus .icon-letter {
+      fill: var(--accent-color)
+  }
+
+  .social-icons-link:hover .icon-smartfone,
+  .social-icons-link:focus .icon-smartfone {
+      fill: var(--accent-color)
+  }
+
+  .clients {
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+  }
+
+  .client-item + .client-item {
+      margin-left: 30px;
+  }
+
+  .client-icon-link:hover .client-icon,
+  .client-icon-link:focus .client-icon {
+    fill: var(--accent-color)
+  }
+  
+  .client-icon {
+      min-width: 45px;
+      height: 45px;
+  }
+
+  .client-icon-link {
+    display: flex;
+    align-items: center;  
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .clients-block {
+      padding-top: 94px;
+      padding-bottom: 94px;
   }
 
 
@@ -340,7 +421,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
-        width: 380px;
+        min-width: 380px;
+        text-align: center;
         font-weight: bold;
         font-size: 36px;
         line-height: 1.16;
@@ -569,9 +651,8 @@ body {
     }
 
     .container-footer {
-        width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 70px;
+        margin-left: 215px;
          }
 
     .link-footer.link {
@@ -588,6 +669,44 @@ body {
     .blok {
         display: block;
         margin-top: 9px;
+    }
+
+    .footer {
+        display: flex;
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-footer {
+        padding-bottom: 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .letter {
+        display: flex;
+        align-items: center;
+    }
+
+    .smartfone {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-letter {
+        width: 16px;
+        height: 12px;
+    }
+
+    .icon-smartfone {
+        width: 10px;
+        height: 16px;
     }
     
     /*Портфолио*/
