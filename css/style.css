@@ -126,6 +126,7 @@ body {
 
 .list-link {
     margin-right: 50px;
+    align-items: center;
 }
 
 .link-tel {
@@ -210,7 +211,7 @@ body {
   .social-icons {
       display: flex;
       justify-content: center;
-      padding-bottom: 30px;
+      
   }
 
   .social-icons-footer {
@@ -264,9 +265,31 @@ body {
       fill: var(--accent-color)
   }
 
-  .social-icons-link:hover .icon-letter,
-  .social-icons-link:focus .icon-letter {
+  .letter-link:hover .icon-letter,
+  .letter-link:focus .icon-letter {
       fill: var(--accent-color)
+  }
+
+  .smartfone-link:hover .icon-smartfone,
+  .smartfone-link:focus .icon-smartfone {
+      fill: var(--accent-color)
+  }
+
+  .letter-link {
+    margin-right: 10px;  
+    width: 16px;
+    height: 16px;
+  } 
+
+  .smartfone-link {
+    margin-right: 10px;  
+    width: 16px;
+    height: 16px; 
+  }
+  
+
+  .letter {
+      align-items: center;
   }
 
   .social-icons-link:hover .icon-smartfone,
@@ -440,7 +463,7 @@ body {
 
     .title-list-blok {
         padding-top: 30px;
-        padding-bottom: 16px;
+        padding-bottom: 30px;
         text-align: center;
     }
 
@@ -528,6 +551,7 @@ body {
     .container-list {
         display: flex;
         margin-left: auto;
+        align-items: center;
                 
     }
 
@@ -648,6 +672,7 @@ body {
 
     .page-list-command {
         margin-top: 10px;
+        margin-bottom: 16px;
     }
 
     .container-footer {
@@ -701,11 +726,11 @@ body {
 
     .icon-letter {
         width: 16px;
-        height: 12px;
+        height: 16px;
     }
 
     .icon-smartfone {
-        width: 10px;
+        width: 16px;
         height: 16px;
     }
     
