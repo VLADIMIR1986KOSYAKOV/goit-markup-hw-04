@@ -477,8 +477,7 @@ body {
 
     .footer {
         background-color: #2F303A;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        
         }
 
     .page-adress {
@@ -545,6 +544,7 @@ body {
     .navigation {
         display: flex;
         align-items: center;
+        margin-right: 305px;
         
     }
 
@@ -705,6 +705,8 @@ body {
     .footer-blok {
         display: flex;
         width: 1200px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .page-footer {
