@@ -249,7 +249,6 @@ body {
     align-items: center;
     width: 44px;
     height: 44px;
-    background-color: #fff;
     border-radius: 50%;
   }
 
@@ -347,11 +346,14 @@ body {
       margin-left: 30px;
   }
 
+  .client-icon-link:hover,
+  .client-icon-link:focus {
+    border: 1px solid var(--accent-color);  
+  }  
+
   .client-icon-link:hover .client-icon,
   .client-icon-link:focus .client-icon {
-    fill: var(--accent-color);
-    border: 1px solid #2196F3;
-    border-radius: 4px;
+    fill: var(--accent-color);    
   }
   
   .client-icon {
