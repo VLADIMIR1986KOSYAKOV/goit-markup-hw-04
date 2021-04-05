@@ -74,6 +74,7 @@ body {
   }
 
 .link {
+    display: block;
     text-decoration: none;
     color: inherit;
     }
@@ -116,13 +117,30 @@ body {
     color: var(--mailto-footer);
 }
 
+
+.container-link {
+    display: flex;
+}
 .link-mailto {
     /*margin-right: 50px;*/
+    display: flex;
+    margin-right: 30px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--mailto-color);
 }
+
+.link-mailto:hover .icon-letter,
+.link-mailto:focus .icon-letter {
+    fill: var(--accent-color); 
+}
+
+.link-tel:hover .icon-smartfone,
+.link-tel:focus .icon-smartfone {
+    fill: var(--accent-color); 
+}
+
 
 .list-link {
     margin-right: 50px;
@@ -130,6 +148,8 @@ body {
 }
 
 .link-tel {
+    display: flex;
+
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -173,6 +193,9 @@ body {
 .button-portfolio:hover {
     color: var(--text-button);
     background-color: var(--bg-button);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-portfolio:focus {
@@ -204,7 +227,7 @@ body {
   }
 
   .social-icons-footer .icon-footer {
-    width: 20px;
+    width: 20px;    
     height: 20px;
 }
 
@@ -240,6 +263,10 @@ body {
     border-radius: 50%;
   }
 
+  .social-icons-link-footer:hover {
+     color: var(--accent-color); 
+  }
+
   
 
   .social-icons-item + .social-icons-item {
@@ -255,13 +282,18 @@ body {
     fill: var(--icon-footer-color)
   }
 
+  .social-icons-link:hover
+  .social-icons-link:focus {
+      background-color: var(--accent-color);
+  }
+
   .social-icons-link:hover .icon,
   .social-icons-link:focus .icon {
       fill: var(--accent-color)
   }
 
-  .social-icons-link-footer:hover .icon-footer,
-  .social-icons-link-footer:focus .icon-footer {
+  .social-icons-link-footer:hover,
+  .social-icons-link-footer:focus {
       fill: var(--accent-color)
   }
 
@@ -276,6 +308,7 @@ body {
   }
 
   .letter-link {
+   
     margin-right: 10px;  
     width: 16px;
     height: 16px;
@@ -289,7 +322,8 @@ body {
   
 
   .letter {
-      align-items: center;
+    display: flex;
+    align-items: center;
   }
 
   .social-icons-link:hover .icon-smartfone,
@@ -311,19 +345,24 @@ body {
 
   .client-icon-link:hover .client-icon,
   .client-icon-link:focus .client-icon {
-    fill: var(--accent-color)
+    fill: var(--accent-color);
+    display: block;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
   }
   
   .client-icon {
-      min-width: 45px;
-      height: 45px;
+   display: flex;
+    max-height: 45px;
   }
+
 
   .client-icon-link {
     display: flex;
     align-items: center;  
     width: 170px;
-    height: 90px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
@@ -731,11 +770,13 @@ body {
     }
 
     .icon-letter {
+        margin-right: 10px;
         width: 16px;
         height: 16px;
     }
 
     .icon-smartfone {
+        margin-right: 10px;
         width: 16px;
         height: 16px;
     }
@@ -743,20 +784,6 @@ body {
     /*Портфолио*/
 
     
-    
-    
-
-    .filter {
-        display: flex;
-        width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-        align-items: center;
-        padding-left: 295px; 
-        padding-top: 94px;
-        
-    }
-
     .filter-section {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -765,13 +792,22 @@ body {
     .filter-list {
         display: flex; 
         justify-content: center;
-        padding-bottom: 50px;      
+             
+    }
+
+    .container-button {
+        margin-bottom: 50px;
     }
 
     .filter-list .filter-item + .filter-item {
         margin-left: 8px;      
     }
 
+    img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
     
 
     .cards-list {
@@ -793,6 +829,14 @@ body {
 
     .cards-item:nth-child(3n) {
         margin-right: 0;
+    }
+
+    .cards-item:hover,
+    .cards-item:focus
+    {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
     .page-title-portfolio,
