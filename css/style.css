@@ -60,6 +60,8 @@ body {
     --tel-footer:rgba(255, 255, 255, 0.6);
     --icon-color: #AFB1B8;
     --icon-footer-color:#FFFFFF;
+    --animation: 250ms ease-in;
+
     }
 
 .visually-hidden {
@@ -77,6 +79,7 @@ body {
     display: block;
     text-decoration: none;
     color: inherit;
+    transition: color var(--animation);
     }
 
 .link.current{
@@ -115,11 +118,13 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--mailto-footer);
+    transition:  color var(--animation);
 }
 
 
 .container-link {
     display: flex;
+    transition: color var(--animation);
 }
 .link-mailto {
     /*margin-right: 50px;*/
@@ -129,6 +134,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--mailto-color);
+    transition: color var(--animation);
 }
 
 .link-mailto:hover .icon-letter,
@@ -145,15 +151,16 @@ body {
 .list-link {
     margin-right: 50px;
     align-items: center;
+    transition: color var(--animation);
 }
 
 .link-tel {
     display: flex;
-
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--mailto-color)
+    color: var(--mailto-color);
+    transition: color var(--animation);
 }
 
 .tel-footer {
@@ -161,6 +168,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--mailto-footer);
+    transition: color var(--animation);
 }
 
 .list,
@@ -174,7 +182,8 @@ body {
     line-height: 1.62;       
     letter-spacing: 0.03em;
     color: var(--title-color);
-    cursor: pointer;     
+    cursor: pointer;
+    transition: color var(--animation), background-color var(--animation);     
 }
 
 .button-portfolio {
@@ -188,6 +197,7 @@ body {
     background: #F5F4FA;
     border-radius: 4px;
     border: none;
+    transition: color var(--animation);
 }
 
 .button-portfolio:hover {
@@ -224,6 +234,7 @@ body {
   .social-icons .icon {
       width: 20px;
       height: 20px;
+      transition: fill var(--animation);
   }
 
   .social-icons-footer .icon-footer {
@@ -566,6 +577,10 @@ body {
     }
 
     .page-header {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
         display: flex;
         align-items: center;
         /*padding-top: 24px;
